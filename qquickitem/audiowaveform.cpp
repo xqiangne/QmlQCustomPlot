@@ -45,7 +45,7 @@ void AudioWaveform::paintWaveForm()
 {
     QVector<double> xValue;
     QVector<double> yValue;
-    QFile file(":/audio1.pcm");
+    QFile file(":/audio/audio1.pcm");
 
     if(!file.open(QIODevice::ReadOnly))
     {

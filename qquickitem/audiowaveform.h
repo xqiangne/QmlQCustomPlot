@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QQuickPaintedItem>
-#include "qcustomplot.h"
+#include "thirdparty/qcustomplot/qcustomplot.h"
 
 class AudioWaveform : public QQuickPaintedItem
 {

@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QQuickPaintedItem>
-#include "qcustomplot.h"
+#include "thirdparty/qcustomplot/qcustomplot.h"
 
 class Spectrum : public QQuickPaintedItem
 {
@@ -16,6 +16,8 @@ public:
 private:
     QCustomPlot* m_pCustomPlot;
     QCPColorMap* m_pColorMap;
+
+    void setGradient();
 
 };
 

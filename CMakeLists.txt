@@ -18,19 +18,21 @@ add_definitions(
 
 set(PROJECT_SOURCES
     main.cpp
-    qml.qrc
-    audio.qrc
-    data.qrc
+    thirdparty/qcustomplot/qcustomplot.h
+    thirdparty/qcustomplot/qcustomplot.cpp
+    qquickitem/timedomainplot.cpp
+    qquickitem/timedomainplot.h
+    qquickitem/audiowaveform.cpp
+    qquickitem/audiowaveform.h
+    qquickitem/spectrum.cpp
+    qquickitem/spectrum.h
+)
 
-    qcustomplot.cpp
-    qcustomplot.h
-    timedomainplot.cpp
-    timedomainplot.h
-
-    audiowaveform.cpp
-    audiowaveform.h
-    spectrum.cpp
-    spectrum.h
+set(PROJECT_RESOURCES
+    resources/qml.qrc
+    resources/audio.qrc
+    resources/conf.qrc
+    resources/other.qrc
 )
 
 link_libraries(
@@ -40,6 +42,7 @@ link_libraries(
 
 add_executable(QmlCustomPlot
     ${PROJECT_SOURCES}
+    ${PROJECT_RESOURCES}
 )
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick Widgets PrintSupport OpenGL Multimedia)

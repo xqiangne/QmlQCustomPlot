@@ -1,7 +1,7 @@
 #ifndef TIMEDOMAINPLOT_H
 #define TIMEDOMAINPLOT_H
 
-#include "qcustomplot.h"
+#include "thirdparty/qcustomplot/qcustomplot.h"
 #include <QRect>
 #include <QQuickPaintedItem>
 

@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>audio1.pcm</file>
-        <file>audio2.pcm</file>
-    </qresource>
-</RCC>
