@@ -5,6 +5,8 @@
 #include "qquickitem/timedomainplot.h"
 #include "qquickitem/audiowaveform.h"
 #include "qquickitem/spectrum.h"
+#include "qquickitem/spectrumplot.h"
+#include "qquickitem/waveformplot.h"
 
 int main(int argc, char *argv[])
 {
@@ -16,6 +18,9 @@ int main(int argc, char *argv[])
     qmlRegisterType<TimeDomainPlot>("myqml",1,0,"TimeDomainPlot");
     qmlRegisterType<AudioWaveform>("myqml",1,0,"AudioWaveform");
     qmlRegisterType<Spectrum>("myqml",1,0,"Spectrum");
+
+    qmlRegisterType<SpectrumPlot>("myqml",1,0,"SpectrumPlot");
+    qmlRegisterType<WaveformPlot>("myqml",1,0,"WaveformPlot");
 
     QQmlApplicationEngine engine;
 

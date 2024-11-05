@@ -5,8 +5,8 @@ import myqml 1.0
 
 Window {
     id: window
-    width: 640
-    height: 480
+    width: 800
+    height: 600
     visible: true
     title: qsTr("Hello World")
 
@@ -42,7 +42,20 @@ Window {
 
         TimeDomainPlot {
             width: window.width
-            height: 200
+            height: 100
+        }
+
+        SpectrumPlot {
+            width: window.width
+            height: 100
+        }
+        WaveformPlot {
+            width: window.width
+            height: 100
+
+            onWidthChanged: {
+                paintWaveForm()
+            }
         }
     }
 

@@ -26,6 +26,12 @@ set(PROJECT_SOURCES
     qquickitem/audiowaveform.h
     qquickitem/spectrum.cpp
     qquickitem/spectrum.h
+    qquickitem/qabstractplot.h
+    qquickitem/qabstractplot.cpp
+    qquickitem/spectrumplot.h
+    qquickitem/spectrumplot.cpp
+    qquickitem/waveformplot.h
+    qquickitem/waveformplot.cpp
 )
 
 set(PROJECT_RESOURCES
