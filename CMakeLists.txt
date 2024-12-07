@@ -15,11 +15,21 @@ add_definitions(
     -DQCUSTOMPLOT_USE_OPENGL
 )
 
+link_directories(
+    thirdparty/fftw/lib
+)
+
+link_libraries(
+    libfftw3-3
+    libfftw3f-3
+    libfftw3l-3
+)
 
 set(PROJECT_SOURCES
     main.cpp
     thirdparty/qcustomplot/qcustomplot.h
     thirdparty/qcustomplot/qcustomplot.cpp
+    thirdparty/fftw/include/fftw3.h
     qquickitem/timedomainplot.cpp
     qquickitem/timedomainplot.h
     qquickitem/audiowaveform.cpp
